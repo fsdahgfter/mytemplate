@@ -9,3 +9,5 @@ void pre_compute() {
     inv[N] = binpow(fact[N], MOD - 2, MOD);
     FORD(i, N - 1, 0) inv[i] = 1ll * inv[i + 1] * (i + 1) % MOD;
 }
+
+int C(int n, int k) { return 1ll * fact[n] * inv[n - k] % MOD * inv[k] % MOD; }
