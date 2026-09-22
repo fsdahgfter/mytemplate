@@ -14,5 +14,5 @@ ll gcd(ll a, ll b, ll &x, ll &y) {
 }
 
 // ax + by = c (c % gcd(a, b) == 0)
-// x = x0 + c / g
-// y = y0 - c / g
+// x = x0 + k * c / g
+// y = y0 - k * c / g
