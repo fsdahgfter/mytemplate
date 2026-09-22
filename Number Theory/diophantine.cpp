@@ -12,3 +12,7 @@ ll gcd(ll a, ll b, ll &x, ll &y) {
     y = x1 - y1 * (a / b);
     return g;
 }
+
+// ax + by = c (c % gcd(a, b) == 0)
+// x = x0 + c / g
+// y = y0 - c / g
